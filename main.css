@@ -1,0 +1,137 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Alteração: Min-height em vez de height */
+    background-color: #ecf0f1; /* Alteração: Adicionei uma cor de fundo */
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    width: 100%; /* Alteração: Ocupar 100% da largura */
+}
+
+h1 {
+    margin: 5px 0;
+}
+
+#skills, #certificates, #employment {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Restante do seu CSS permanece inalterado */
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.list {
+    list-style: square;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #2ecc71;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e74c3c;
+}
+
+.Dark-theme {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+#certificates {
+    text-align: center;
+}
+
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+.certificate {
+    max-width: 100%;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.certificate img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.certificate:hover {
+    transform: scale(1.1);
+}
+
+.enlarged {
+    transform: scale(4.0);
+}
+
+#certificates img {
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    header img {
+        max-width: 80%;
+    }
+}
+header img {
+    border-radius: 50%;
+    max-width: 100px; /* Definindo um tamanho máximo */
+    height: auto;
+    margin-bottom: 10px;
+}
